@@ -2,6 +2,22 @@
 
 Given the maze environment, write a Java program to solve the following questions.
 
+============= Maze =============
+|----|----|----|----|----|----|
+| +1 | W  | +1 |    |    | +1 |
+|----|----|----|----|----|----|
+|    | -1 |    | +1 | W  | -1 |
+|----|----|----|----|----|----|
+|    |    | -1 |    | +1 |    |
+|----|----|----|----|----|----|
+|    |    |    | -1 |    | +1 |
+|----|----|----|----|----|----|
+|    | W  | W  | W  | -1 |    |
+|----|----|----|----|----|----|
+|    |    |    |    |    |    |
+|----|----|----|----|----|----|
+
+
 The transition model is as follows: the intended outcome occurs with probability 0.8, and with probability 0.1 the agent moves at either right angle to the intended direction. If the move would make the agent walk into a wall, the agent stays in the same place as before. The rewards for the white squares are -0.04, for the green squares are +1, and for the brown squares are -1. Note that there are no terminal states; the agent’s state sequence is infinite.
 
 # Part 1 
@@ -39,7 +55,7 @@ Coordinates are in (col,row) format with the top left corner being (0,0).\
 (5,2): 14.370738\
 (5,3): 15.058972\
 (5,4): 13.81445\
-(5,5): 12.731918\
+(5,5): 12.731918
 
 # Part 2 (Bonus Questions) 
 Design a more complicated maze environment of your own and re-run the algorithms designed for Part 1 on it. How does the number of states and the complexity of the environment affect convergence? How complex can you make the environment and still be able to learn the right policy?
