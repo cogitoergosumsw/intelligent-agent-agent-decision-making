@@ -2,22 +2,6 @@
 
 Given the maze environment, write a Java program to solve the following questions.
 
-============= Maze =============
-|----|----|----|----|----|----|
-| +1 | W  | +1 |    |    | +1 |
-|----|----|----|----|----|----|
-|    | -1 |    | +1 | W  | -1 |
-|----|----|----|----|----|----|
-|    |    | -1 |    | +1 |    |
-|----|----|----|----|----|----|
-|    |    |    | -1 |    | +1 |
-|----|----|----|----|----|----|
-|    | W  | W  | W  | -1 |    |
-|----|----|----|----|----|----|
-|    |    |    |    |    |    |
-|----|----|----|----|----|----|
-
-
 The transition model is as follows: the intended outcome occurs with probability 0.8, and with probability 0.1 the agent moves at either right angle to the intended direction. If the move would make the agent walk into a wall, the agent stays in the same place as before. The rewards for the white squares are -0.04, for the green squares are +1, and for the brown squares are -1. Note that there are no terminal states; the agent’s state sequence is infinite.
 
 # Part 1 
